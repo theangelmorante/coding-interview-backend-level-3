@@ -1,8 +1,13 @@
-import { initializeServer, startServer } from "./server"
+import { startServer } from './server';
+import 'dotenv/config';
 
 process.on('unhandledRejection', (err) => {
-    console.error(err)
-    process.exit(1)
-})
+  console.error(err);
+  process.exit(1);
+});
 
-await startServer()
+async function main() {
+  await startServer();
+}
+
+main();
