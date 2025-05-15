@@ -138,6 +138,8 @@ Use the predefined requests to test all CRUD operations.
 | Must be implemented in TypeScript                               | ✅ Done  |
 | Must not modify the E2E test file                               | ✅ Done  |
 
+<img width="665" alt="image" src="https://github.com/user-attachments/assets/8f6711c8-cf88-477f-89ff-46af7538973f" />
+
 ---
 ## To Test with Postman
 
