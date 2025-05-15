@@ -9,8 +9,8 @@ import { PrismaItemRepository } from './item/infraestructure/item.repository';
 
 const getServer = async () => {
   const server = Hapi.server({
-    host: process.env.HOST || 'localhost',
-    port: process.env.PORT ? Number(process.env.PORT) : 3000,
+    host: process.env.HOST || '0.0.0.0',
+    port: process.env.PORT ? Number(process.env.PORT) : 4000,
   });
 
   registerRequestLogger(server);

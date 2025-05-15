@@ -7,7 +7,19 @@
   "remoteUser": "node",
   "customizations": {
     "vscode": {
-      "extensions": ["Prisma.prisma", "alexcvzz.vscode-sqlite"]
+      "extensions": [
+        "Prisma.prisma",
+        "alexcvzz.vscode-sqlite"
+      ]
     }
+  },
+  "forwardPorts": [
+    4000
+  ],
+  "updateRemoteUserUID": true,
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers-contrib/features/ts-node:1": {}
   }
 }
