@@ -48,7 +48,6 @@ export const registerItemRoutes = (server: Server) => {
           schema: itemResponseSchema,
           status: {
             201: itemResponseSchema,
-            400: errorResponseSchema,
           },
         },
       },
@@ -85,7 +84,6 @@ export const registerItemRoutes = (server: Server) => {
           schema: itemResponseSchema,
           status: {
             200: itemResponseSchema,
-            404: notFoundResponseSchema,
           },
         },
       },
@@ -107,8 +105,6 @@ export const registerItemRoutes = (server: Server) => {
           schema: itemResponseSchema,
           status: {
             200: itemResponseSchema,
-            400: errorResponseSchema,
-            404: notFoundResponseSchema,
           },
         },
       },
@@ -127,8 +123,7 @@ export const registerItemRoutes = (server: Server) => {
         },
         response: {
           status: {
-            204: noContentResponseSchema,
-            404: notFoundResponseSchema,
+            204: Joi.any().description('No Content').label('NoContent'),
           },
         },
       },
