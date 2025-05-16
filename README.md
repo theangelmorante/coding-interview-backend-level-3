@@ -77,7 +77,8 @@ Ensure you have the following installed:
 
 ⚙️ 2. Install Dependencies
 
-    yarn install
+    yarn install 
+o   npm install
 
 ⚙️ 3. Open the Project in DevContainer
 Open VS Code.
@@ -95,27 +96,37 @@ yarn prisma:generate
 yarn prisma:migrate
 ```
 
+o
+
+```
+npm run prisma:generate
+npm run prisma:migrate
+```
+
 ▶️ 5. Start the Server
 Now, you can start the API server:
 ```yarn start```
+o ```npm run start```
 
 The API will be available at:
 ```http://localhost:4000```
 
 🌐 6. Access the Swagger Documentation
 You can explore and test all endpoints interactively via Swagger UI:
-```http://localhost:3000/documentation```
+```http://localhost:4000/documentation```
 
 🧪 7. Run the End-to-End Tests
 To validate that your implementation passes all the required acceptance criteria:
 
 ```yarn test```
+o ```npm run test```
 
 
 
 🧪 8. Run the Unit Tests (Optional)
 The project also includes isolated unit tests for internal logic:
 ```yarn test:unit```
+o ```npm run test:unit```
 
 
 📬 9. Test the API Using Postman (Optional)
